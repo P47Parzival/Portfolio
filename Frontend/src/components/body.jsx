@@ -2,7 +2,7 @@ import React from 'react'
 
 const Body = () => {
     return (
-        <div className='flex justify-evenly mt-[80px]'>
+        <div className='flex justify-evenly mt-32 bg-black'>
             <div>
                 <pre>
                 <h1 className='text-4xl bold text-cyan-500 font-serif'>Hey,</h1>
@@ -19,7 +19,7 @@ const Body = () => {
             </div>
             <div></div>
             <div className='h-auto w-[300px]'>
-                <img className='rounded-lg' src="src\assets\Dhruv_pf_image.jpeg" alt="Description of image" />
+                <img className='rounded-lg' src="https://github.com/P47Parzival/Portfolio/blob/main/Frontend/src/assets/Dhruv_pf_image.jpeg?raw=true" alt="Description of image" />
             </div>
         </div>
     )
