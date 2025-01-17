@@ -32,16 +32,28 @@ const About = () => {
         </div>
         <div className='p-10'>
           <p className='text-lg bold text-white mt-4 font-serif'>
-          💡 My Journey <br />
-          Over time, I’ve delved deep into the MERN stack (MongoDB, Express.js, React.js, and Node.js), creating full-stack applications that are both scalable and efficient.
-          Whether it’s developing responsive websites or working on APIs, every project has been a stepping stone in honing my skills and expanding my horizons.
+            💡 My Journey <br />
+            Over time, I’ve delved deep into the MERN stack (MongoDB, Express.js, React.js, and Node.js), creating full-stack applications that are both scalable and efficient.
+            Whether it’s developing responsive websites or working on APIs, every project has been a stepping stone in honing my skills and expanding my horizons.
           </p>
           <p className='text-lg bold text-white mt-4 font-serif'>
-          📚 Why I Do What I Do <br />
-          I believe technology is a powerful tool for change, and I’m eager to leverage my expertise to contribute to meaningful projects. As I grow in my career, my goal is not just to build solutions but to inspire others to embark on their own tech journeys.
+            📚 Why I Do What I Do <br />
+            I believe technology is a powerful tool for change, and I’m eager to leverage my expertise to contribute to meaningful projects. As I grow in my career, my goal is not just to build solutions but to inspire others to embark on their own tech journeys.
           </p>
         </div>
-        <Footer></Footer>
+        <div>
+          <h1 className='pt-8 text-2xl text-center bold text-cyan-500 font-serif'>Certainly i have good experience with many languages, some of which are</h1>
+          <div className='flex justify-center flex-wrap'>
+            <img className='h-64' src=" https://github.com/P47Parzival/Portfolio/blob/main/Frontend/src/assets/htmlcssjs.png?raw=true" alt="" />
+            <img className='h-64' src="https://github.com/P47Parzival/Portfolio/blob/main/Frontend/src/assets/react.png?raw=true" alt="" />
+            <img className='h-56 pt-4' src="https://github.com/P47Parzival/Portfolio/blob/main/Frontend/src/assets/nodejs.png?raw=true" alt="" />
+            <img className='h-60' src="https://github.com/P47Parzival/Portfolio/blob/main/Frontend/src/assets/mongo.png?raw=true" alt="" />
+            <img className='h-64' src="https://github.com/P47Parzival/Portfolio/blob/main/Frontend/src/assets/c.png?raw=true" alt="" />
+            <img className='h-64' src="https://github.com/P47Parzival/Portfolio/blob/main/Frontend/src/assets/java.png?raw=true" alt="" />
+            <img className='h-64' src="https://github.com/P47Parzival/Portfolio/blob/main/Frontend/src/assets/python.png?raw=true" alt="" />
+          </div>
+        </div>
+        <Footer className='pt-10'></Footer>
       </div>
     </div>
   )
