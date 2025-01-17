@@ -14,7 +14,7 @@ const Contact = () => {
     const contactData = {email, message}
 
     try {
-      const response = await axios.post("http://localhost:5000/api/contact", contactData)
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/contact`, contactData)
       if(response.data.success){
         alert("Message sent Succesfully")
         setemail('')
