@@ -2,6 +2,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-*{
+/* *{
+    background-color: #000000;
+} */
+*:not(.footer-exclude) {
     background-color: #000000;
 }
