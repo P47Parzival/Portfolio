@@ -5,41 +5,42 @@ import { useState } from 'react';
 
 const Contact = () => {
 
-  const [email, setemail] = useState('')
-  const [message, setmessage] = useState('')
+  // const [email, setemail] = useState('')
+  // const [message, setmessage] = useState('')
 
-  const handlesubmit = async(e) => {
-    e.preventDefault()
+  // const handlesubmit = async(e) => {
+  //   e.preventDefault()
 
-    const contactData = {email, message}
+  //   const contactData = {email, message}
 
-    try {
-      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/contact`, contactData)
-      if(response.data.success){
-        alert("Message sent Succesfully")
-        setemail('')
-        setmessage('')
-      }
-      else{
-        alert('failed to send message')
-      }
-    } catch (error) {
-      console.log("Error: ", error)
-      alert("error occured")
-    }
-  }
+  //   try {
+  //     const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/contact`, contactData)
+  //     if(response.data.success){
+  //       alert("Message sent Succesfully")
+  //       setemail('')
+  //       setmessage('')
+  //     }
+  //     else{
+  //       alert('failed to send message')
+  //     }
+  //   } catch (error) {
+  //     console.log("Error: ", error)
+  //     alert("error occured")
+  //   }
+  // }
   
   return (
     <StyledWrapper>
       <div className="form-container">
-        <form className="form" onSubmit={handlesubmit}>
+        <form action='https://api.web3forms.com/submit' method='post' className="form">
+          <input type="hidden" name='access_key' value="9db1465d-456c-4ea7-8d5e-b8c0445b0dc5"/>
           <div className="form-group">
             <label htmlFor="email">Company/Personal Email</label>
-            <input onChange={(e) => setemail(e.target.value)} required name="email" id="email" type="text" />
+            <input required name="email" id="email" type="text" />
           </div>
           <div className="form-group">
             <label htmlFor="textarea">How Can We Help You?</label>
-            <textarea onChange={(e) => setmessage(e.target.value)} required cols={50} rows={10} id="textarea" name="textarea" defaultValue={"          "} />
+            <textarea required cols={50} rows={10} id="textarea" name="textarea" defaultValue={"          "} />
           </div>
           <button type="submit" className="form-submit-btn" onClick={() => alert("Thanks for Connection, I will reach out to you as soon as possible")}>Submit</button>
         </form>
