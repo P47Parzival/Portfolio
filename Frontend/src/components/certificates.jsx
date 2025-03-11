@@ -79,6 +79,16 @@ const Certificates = () => {
           Card_title="Thinkbiz Teachathon"
           Description="Thinkbiz 24-hour in-person Techathon 2025."
         />
+        <Cardcerti
+          image="https://github.com/P47Parzival/Portfolio/blob/main/Frontend/src/assets/IOT%20workshop.png?raw=true"
+          Card_title="IOT workshop"
+          Description="Recently hand an opportunity to attend hands on workshop on esp32, arduino and Nodemcu."
+        />
+        <Cardcerti
+          image="https://github.com/P47Parzival/Portfolio/blob/main/Frontend/src/assets/IMG20250310224857.jpg?raw=true"
+          Card_title="Xenesis"
+          Description="Participated in coding contest of xenesis and secured 4th rank"
+        />
       </div>
     </section>
   );
