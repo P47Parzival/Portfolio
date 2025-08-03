@@ -8,10 +8,12 @@ export default function Projects() {
   });
 
   const getBlurClass = () => {
-    if (ratio >= 0.45) return "blur-none";
-    if (ratio >= 0.4) return "blur-md";
-    if (ratio >= 0.05) return "blur-xl";
-    return "blur-2xl";
+    // If ratio is undefined or 0, don't apply blur (fallback for deployment issues)
+    if (!ratio || ratio === 0) return "blur-none";
+    if (ratio >= 0.3) return "blur-none";
+    if (ratio >= 0.2) return "blur-sm";
+    if (ratio >= 0.05) return "blur-md";
+    return "blur-lg";
   };
 
   return (
@@ -23,7 +25,7 @@ export default function Projects() {
       </div>
       <div
         ref={ref}
-        className={`transition-all duration-500  ease-in-out ${getBlurClass()}`}
+        className={`transition-all duration-500 ease-in-out ${getBlurClass()}`}
       >
         <BentoGrid className="grid-cols-2 grid-rows-8 h-[1000px] md:grid-rows-6 md:grid-cols-5 md:h-[1200px] lg:grid-rows-7 lg:grid-cols-6 lg:h-[1400px] gap-2">
           {projects.map((feature) => (
