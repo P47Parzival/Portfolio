@@ -92,6 +92,15 @@ export const projects = [
     className:
       "md:row-start-2 md:row-end-5 md:col-start-5 md:col-end-8 col-start-1 col-end-2 row-start-1 row-end-3",
   },
+  {
+    name: "Video RAG",
+    description: "A powerful Video RAG system that enables users to upload videos, automatically builds searchable indexes from transcripts, and answers questions using Google Gemini. Built with a focus on local processing and only free tools.",
+    href: "https://github.com/P47Parzival/Video-RAG",
+    cta: "Learn more",
+    background: "https://github.com/P47Parzival/Video-RAG/blob/main/assests/RAG.jpg?raw=true",
+    className:
+      "md:row-start-5 md:row-end-7 md:col-start-1 md:col-end-8 col-start-1 col-end-2 row-start-1 row-end-3",
+  }
 ];
 
 export const skills = [
